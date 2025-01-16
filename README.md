@@ -9,6 +9,16 @@
 
 # Computer Vision Annotation Tool (CVAT)
 
+## Angi-Cvat command line
+
+### first time init:
+- sudo bash cvat_init.sh
+### start cvat:
+- bash cvat_start.sh
+### shutdown:
+- bash cvat_down.sh
+
+
 [![CI][ci-img]][ci-url]
 [![Gitter chat][gitter-img]][gitter-url]
 [![Discord][discord-img]][discord-url]

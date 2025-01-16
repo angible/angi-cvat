@@ -1,0 +1,1 @@
+export CVAT_HOST=cvat.angible.net && export CVAT_VERSION=v2.25.0 && docker compose -f docker-compose-latest.yml -f components/serverless/docker-compose.serverless.yml down
