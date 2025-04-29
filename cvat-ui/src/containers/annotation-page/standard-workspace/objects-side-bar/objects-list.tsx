@@ -1,5 +1,5 @@
 // Copyright (C) 2020-2022 Intel Corporation
-// Copyright (C) 2022-2023 CVAT.ai Corporation
+// Copyright (C) CVAT.ai Corporation
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,10 +26,10 @@ import {
 } from 'actions/settings-actions';
 import isAbleToChangeFrame from 'utils/is-able-to-change-frame';
 import {
-    CombinedState, StatesOrdering, ObjectType, ColorBy, Workspace,
+    CombinedState, StatesOrdering, ColorBy, Workspace,
     ActiveControl,
 } from 'reducers';
-import { ObjectState, ShapeType } from 'cvat-core-wrapper';
+import { ObjectState, ObjectType, ShapeType } from 'cvat-core-wrapper';
 import { filterAnnotations } from 'utils/filter-annotations';
 import { registerComponentShortcuts } from 'actions/shortcuts-actions';
 import { ShortcutScope } from 'utils/enums';
@@ -599,7 +599,7 @@ class ObjectsListContainer extends React.PureComponent<Props, State> {
                 const state = activatedState(true);
                 if (!readonly) {
                     if (state) {
-                        openAnnotationsActionModal(state);
+                        openAnnotationsActionModal({ defaultObjectState: state });
                     } else {
                         openAnnotationsActionModal();
                     }

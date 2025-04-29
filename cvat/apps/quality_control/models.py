@@ -1,4 +1,4 @@
-# Copyright (C) 2023-2024 CVAT.ai Corporation
+# Copyright (C) CVAT.ai Corporation
 #
 # SPDX-License-Identifier: MIT
 
@@ -269,4 +269,4 @@ class QualitySettings(models.Model):
 
     @property
     def organization_id(self):
-        return getattr(self.task.organization, "id", None)
+        return self.task.organization_id

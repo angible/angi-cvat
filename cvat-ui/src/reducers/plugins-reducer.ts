@@ -1,5 +1,5 @@
 // Copyright (C) 2020-2022 Intel Corporation
-// Copyright (C) 2023-2024 CVAT.ai Corporation
+// Copyright (C) CVAT.ai Corporation
 //
 // SPDX-License-Identifier: MIT
 
@@ -60,11 +60,12 @@ const defaultState: PluginsState = {
             },
         },
         projectActions: {
-            // not used
             items: [],
         },
         taskActions: {
-            // not used
+            items: [],
+        },
+        jobActions: {
             items: [],
         },
         taskItem: {
